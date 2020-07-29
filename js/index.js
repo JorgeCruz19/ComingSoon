@@ -46,11 +46,11 @@ const checkEmail = (input) => {
 /* Funcion Resize */
 const changeSize = (mql) => {
 	if (mql.matches) {
-		bgHero.removeAttribute('src', '../img/hero-mobile.jpg')
-		bgHero.setAttribute('src', '../img/hero-desktop.jpg')
+		bgHero.removeAttribute('src', './img/hero-mobile.jpg')
+		bgHero.setAttribute('src', './img/hero-desktop.jpg')
 	} else {
-		bgHero.removeAttribute('src', '../img/hero-desktop.jpg')
-		bgHero.setAttribute('src', '../img/hero-mobile.jpg')
+		bgHero.removeAttribute('src', './img/hero-desktop.jpg')
+		bgHero.setAttribute('src', './img/hero-mobile.jpg')
 	}
 }
 breakpoint.addListener(changeSize)
